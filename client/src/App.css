@@ -1,0 +1,269 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background: #10243a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.welcome {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+.welcome h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.welcome p {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.welcome button {
+  padding: 14px 36px;
+  border: 0;
+  border-radius: 10px;
+  background: #62d6ae;
+  color: #10243a;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.welcome form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(100%, 360px);
+  text-align: left;
+}
+
+.welcome form label {
+  font-weight: bold;
+}
+
+.welcome form input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #b9cbd6;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #10243a;
+  font: inherit;
+}
+
+.welcome form input:focus {
+  outline: 3px solid #62d6ae;
+  outline-offset: 2px;
+}
+
+.welcome form button {
+  margin-top: 14px;
+  width: 100%;
+}
+
+body {
+  display: block;
+}
+
+#root {
+  width: 100%;
+}
+
+.login-screen {
+  width: min(100%, 420px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  background: #f7faf8;
+  color: #173b2a;
+  text-align: left;
+}
+
+.login-screen>button {
+  border-radius: 0;
+  background: #185b3c;
+  color: white;
+  text-align: left;
+  padding: 32px 18px 12px;
+}
+
+.login-screen h1 {
+  padding: 12px 18px 0;
+  background: #185b3c;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.login-screen>p:first-of-type {
+  margin: 0;
+  padding: 8px 18px 22px;
+  background: #185b3c;
+  color: white;
+}
+
+.login-screen form {
+  width: 100%;
+  padding: 28px 18px;
+}
+
+.login-screen form button {
+  background: #185b3c;
+  color: white;
+}
+
+.login-screen>p[role="status"] {
+  padding: 0 18px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 75px;
+}
+
+.login-screen form .show-password {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: auto;
+  margin: 0;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  color: #185b3c;
+  font-size: 0.9rem;
+}
+
+.login-screen form .forgot-password {
+  align-self: flex-end;
+  width: auto;
+  margin: 0 0 10px;
+  padding: 4px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #00654d;
+  font-size: 0.95rem;
+  text-decoration: underline;
+}
+
+.welcome-screen {
+  width: min(100%, 420px);
+  margin: 0 auto;
+  background: linear-gradient(160deg, #1b6744, #0f513d);
+  color: white;
+}
+
+.welcome-screen>button {
+  width: 100%;
+  max-width: 360px;
+  background: white;
+  color: #0f513d;
+}
+
+.welcome-screen {
+  width: min(100%, 420px);
+  margin: 0 auto;
+  background: linear-gradient(160deg, #1b6744, #0f513d);
+  color: white;
+}
+
+.welcome-screen>button {
+  width: 100%;
+  max-width: 360px;
+  background: white;
+  color: #0f513d;
+}
+
+.welcome-screen h1 {
+  line-height: 1.15;
+}
+
+.welcome-icon {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 18px;
+  background: white;
+  font-size: 2.5rem;
+}
+
+.welcome-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+  margin: 8px 0 18px;
+}
+
+.welcome-features span {
+  font-size: 0.85rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #637a6d;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #cbd9d0;
+}
+
+.login-screen form .sso-button {
+  background: white;
+  color: #185b3c;
+  border: 2px solid #185b3c;
+}
+
+.login-screen .signup-prompt {
+  margin: 0;
+  padding: 0 18px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.login-screen .signup-prompt button {
+  width: auto;
+  margin: 0;
+  padding: 4px;
+  border: 0;
+  background: transparent;
+  color: #00654d;
+  font: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
